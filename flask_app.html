@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ask the LLM</title>
+</head>
+<body>
+
+  <h2>Ask the LLM</h2>
+
+  <p>Type your question and click <b>Ask</b>.</p>
+
+  <form method="post">
+    <textarea name="question" rows="5" cols="60">{{ question }}</textarea>
+    <br><br>
+    <button type="submit">Ask</button>
+  </form>
+
+  {% if answer %}
+  <hr>
+  <h3>Answer:</h3>
+  <pre>{{ answer }}</pre>
+  {% endif %}
+
+</body>
+</html>
